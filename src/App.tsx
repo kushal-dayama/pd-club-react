@@ -1,8 +1,6 @@
-// import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Box } from "@mui/material";
 import Navbar from "./components/layout/Navbar";
-// import TopBar from './components/layout/TopBar';
 import Footer from "./components/layout/Footer";
 import BackToTop from "./components/common/BackToTop";
 import Home from "./pages/Home";
@@ -25,7 +23,7 @@ import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
     return (
-        <Router>
+        <Router basename="/pd-club-react">
             <ScrollToTop />
 
             <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>

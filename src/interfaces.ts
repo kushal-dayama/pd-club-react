@@ -30,3 +30,10 @@ export interface Course {
     subtitle: string;
     image: string;
 }
+
+export interface Testimonial {
+    img: string;
+    quote: string;
+    name: string;
+    company: string;
+}

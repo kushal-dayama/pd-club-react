@@ -1,7 +1,7 @@
 import type { Client } from "../interfaces";
 
 export const clients: Client[] = [
-    { name: "Bank of America", logo: "/img/clienteles/soa.png" },
+    { name: "Bank of America", logo: "/img/clienteles/boa.png" },
     { name: "Accenture", logo: "/img/clienteles/accenture-logo.png" },
     { name: "Tech Mahindra", logo: "/img/clienteles/tech-mahindra.png" },
     { name: "Cognizant", logo: "/img/clienteles/cognizant.png" },
