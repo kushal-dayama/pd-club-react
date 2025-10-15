@@ -18,7 +18,7 @@ export const useThemeContext = () => useContext(ThemeContext);
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [mode, setMode] = useState<"light" | "dark">(() => {
         const saved = localStorage.getItem("theme-mode");
-        return (saved as "light" | "dark") || "light";
+        return (saved as "light" | "dark") || "dark";
     });
 
     const toggleTheme = () => {

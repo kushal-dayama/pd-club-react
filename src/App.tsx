@@ -23,7 +23,7 @@ import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
     return (
-        <Router basename="/pd-club-react/">
+        <Router>
             <ScrollToTop />
 
             <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
