@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Container, Grid, Typography, Button, Stack, Paper } from "@mui/material";
+import { asset } from "../../utils/asset";
 import { Link } from "react-router-dom";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import GroupsIcon from "@mui/icons-material/Groups";
@@ -14,13 +15,9 @@ const AboutSection: React.FC = () => {
                         <Grid size={{ xs: 12, md: 3 }}>
                             <Box
                                 component="img"
-                                src="/img/about-pd-club.jpg"
+                                src={asset("/img/about-pd-club.jpg")}
                                 alt="About PD Club"
-                                sx={{
-                                    width: "100%",
-                                    borderRadius: 2,
-                                    boxShadow: 3,
-                                }}
+                                sx={{ width: "100%", borderRadius: 2, boxShadow: 3 }}
                             />
                         </Grid>
 
@@ -90,7 +87,7 @@ const AboutSection: React.FC = () => {
                 sx={{
                     position: "relative",
                     py: { xs: 6, md: 10 },
-                    backgroundImage: "url('/images/backgrounds/success-story.jpg')",
+                    backgroundImage: `url(${asset("/images/backgrounds/success-story.jpg")})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",

@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
+import { asset } from "../../utils/asset";
 
 const HeroSection: React.FC = () => {
     return (
@@ -7,7 +8,7 @@ const HeroSection: React.FC = () => {
             sx={{
                 position: "relative",
                 height: { xs: 400, md: 850 },
-                backgroundImage: "url(/img/carousel-bg.jpg)",
+                backgroundImage: `url(${asset("/img/carousel-bg.jpg")})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 display: "flex",

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://kushal-dayama.github.io/pd-club-react",
+  "homepage": "https://kushal-dayama.github.io/pd-club-react/",
   "name": "pd-club-react",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +9,8 @@
     "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",  
-    "deploy": "gh-pages -d dist -f"
+    "deploy": "vite build && gh-pages -d dist"
+
 },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

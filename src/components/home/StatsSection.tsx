@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
+import { asset } from "../../utils/asset";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -62,7 +63,7 @@ const StatsSection: React.FC = () => {
                 bgcolor: "primary.main",
                 color: "white",
                 py: 8,
-                backgroundImage: "url(/img/PD%20Club/Carousel-1.jpg)",
+                backgroundImage: `url(${asset("/img/PD%20Club/Carousel-1.jpg")})`,
                 backgroundSize: "cover",
                 backgroundBlendMode: "multiply",
                 position: "relative",

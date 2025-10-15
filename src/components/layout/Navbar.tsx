@@ -19,6 +19,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import ThemeToggle from "../common/ThemeToggle";
+import { asset } from "../../utils/asset";
 
 const Navbar: React.FC = () => {
     const theme = useTheme();
@@ -55,7 +56,7 @@ const Navbar: React.FC = () => {
                 <Toolbar>
                     <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
                         <Box component={Link} to="/" sx={{ display: "flex", alignItems: "center", textDecoration: "none", color: "inherit" }}>
-                            <Box component="img" src="/img/logo.png" alt="PD Club Logo" sx={{ height: 50, mr: 2 }} />
+                            <Box component="img" src={asset("/img/logo.png")} alt="PD Club Logo" sx={{ height: 50, mr: 2 }} />
                             <Box
                                 component="h1"
                                 sx={{

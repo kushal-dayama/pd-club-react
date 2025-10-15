@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Grid, Card, CardMedia, CardContent, Typography, Button, Box } from "@mui/material";
+import { asset } from "../../utils/asset";
 import { Link } from "react-router-dom";
 
 interface Course {
@@ -11,22 +12,22 @@ interface Course {
 const courses: Course[] = [
     {
         title: "Technical Courses",
-        image: "/img/technical.jpg",
+        image: asset("/img/technical.jpg"),
         description: "We offer cutting edge technical courses by reputed institutions and faculties",
     },
     {
         title: "Life's Amazing Secrets",
-        image: "/img/life-secrets.png",
+        image: asset("/img/life-secrets.png"),
         description: 'This is an 8 session certified introductory course to help you unveil "The Real You"',
     },
     {
         title: "Principled Centered Leadership",
-        image: "/img/principle-leadership.jpg",
+        image: asset("/img/principle-leadership.jpg"),
         description: "This course explores the essential qualities that are required for a long sustainable inspiring leadership",
     },
     {
         title: "Positive Thinker",
-        image: "/img/positive-thinker.jpg",
+        image: asset("/img/positive-thinker.jpg"),
         description: "Special course designed to change your thinking and giving a positive outlook towards life",
     },
 ];
