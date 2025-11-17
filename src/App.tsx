@@ -11,7 +11,7 @@ import Blog4 from "./pages/Blogs/Blog4";
 import Blog5 from "./pages/Blogs/Blog5";
 import Blog6 from "./pages/Blogs/Blog6";
 import AllBlogs from "./pages/Blogs/Blogs";
-import Team from "./components/Team";
+// import Team from "./components/Team";
 import Clientele from "./pages/Clientele";
 import About from "./pages/About";
 import Activities from "./pages/Activities";
@@ -20,6 +20,8 @@ import TechnicalCourses from "./pages/Courses/TechnicalCourses";
 import PersonalityDevelopmentCourses from "./pages/Courses/PersonalityDevelopmentCourses";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/common/ScrollToTop";
+import TeamWithoutAvatar from "./components/TeamWithoutAvatar";
+import CertificateVerifier from "./pages/CertificateVerifier";
 
 function App() {
     return (
@@ -46,14 +48,15 @@ function App() {
                             {/* Nested routes */}
                             <Route index element={<CoursesLanding />} />
                             <Route path="technical" element={<TechnicalCourses />} />
-                            <Route path="personality-development" element={<PersonalityDevelopmentCourses />} />
+                            <Route path="personality_development" element={<PersonalityDevelopmentCourses />} />
                         </Route>
 
-                        <Route path="/team" element={<Team />} />
+                        <Route path="/team" element={<TeamWithoutAvatar />} />
                         <Route path="/clientele" element={<Clientele />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/activities" element={<Activities />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/verify_certificate" element={<CertificateVerifier />} />
                     </Routes>
                 </Box>
                 <Footer />

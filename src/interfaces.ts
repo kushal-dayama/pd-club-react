@@ -37,3 +37,15 @@ export interface Testimonial {
     name: string;
     company: string;
 }
+export interface CertificateVerificationSuccessResponse {
+  valid: true;
+  certificateId: string;
+  studentName: string;
+  collegeName: string;
+  courseName: string;
+  courseDate: string; // ISO date string
+}
+
+export interface CertificateVerificationFailureResponse {
+  valid: false;
+}

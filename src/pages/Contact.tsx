@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
                 message: data.message,
             };
 
-            const googleSheetUrl = "https://script.google.com/macros/s/AKfycbwYJTCtLJX4oz-vJ0B2Wib3EOTeqEnVSeuBdh0PS-7Uz9FI2CHLpg5uRMtrzXGme3Nb/exec"; // Replace with your Apps Script URL
+            const googleSheetUrl = "https://script.google.com/macros/s/AKfycbxCcz-FM0zfUCr6meNqic_3geidpDBr46NDL6fmEOPLh5WTxKlZnYCL_e7FZmrAyaHi/exec"; // Replace with your Apps Script URL
 
             // Try to save to Google Sheets (always attempt this)
             try {
@@ -92,9 +92,9 @@ const Contact: React.FC = () => {
 
             // Try to send email via EmailJS (might fail if limit exceeded)
             try {
-                const serviceId = "service_bt8z9pc";
-                const templateId = "template_2pw7bca";
-                const publicKey = "iU_uXXSepuD7unNfQ";
+                const serviceId = "service_5qux3y6";
+                const templateId = "template_fufd1yh";
+                const publicKey = "YPPhWcqM1xwLXL9id";
 
                 const templateParams = {
                     from_name: data.name,
